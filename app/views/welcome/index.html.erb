@@ -5,9 +5,19 @@
 </head>
 <body class="top#page">
 
-    <h1>Hello, Rails!</h1>
-    <p>Welcome to my Blog, my name is Scott Speedie and I am currently teaching myslef to become a developer</p>
-    
+  <%= render 'shared/navigation' %>
+
+   <div id="main-container" class="container">
+    <div class="row">
+      <div class="col-xs-3">
+        <h3>Bootstrap is working!</h3>
+      </div>
+      <div class="col-xs-9">
+        <%= yield %>
+      </div>
+      </div>
+    </div>
+
     
     <%= link_to 'My Blog', controller: 'articles' %>
 </body>
