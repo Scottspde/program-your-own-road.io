@@ -1,7 +1,15 @@
 <%= render 'shared/navigation' %>
 <h1>Listing articles</h1>
  
-<%= link_to 'New article', new_article_path %>
+ <button type="button" class="btn btn-default" aria-label="Left Align">
+  <span class="glyphicon glyphicon-align-left" aria-hidden="true">
+    <a><%= link_to 'New article', new_article_path %></a>
+  </span>
+ </button>
+
+ <div class="btn btn-default">
+  <%= button.label %>
+
 
 <table>
   <tr>

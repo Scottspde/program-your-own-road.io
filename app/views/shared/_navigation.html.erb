@@ -5,9 +5,9 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div id="navbarResponsive" class="collapse navbar-collapse">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav ml-auto text-left">
         <li class="nav-item active">
-            <a class="nav-link" href="#">Blog</a>
+            <%= link_to 'My Blog', controller: 'articles', :class=>"nav-link" %>
         </li>
         <li class="nav-item active">
             <a class="nav-link" href="#">Portfolio</a>
@@ -15,5 +15,6 @@
         <li class="nav-item active">
             <a class="nav-link" href="#">Contact</a>
         </li>
+      </ul>
     </div>
   </nav>
